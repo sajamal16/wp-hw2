@@ -86,3 +86,31 @@ body {
   background-color: #555;
   transition: background-color 0.3s ease;
 }
+
+/* Moves 'bbq' to mulch near campfire */
+div.bbq {
+    position: absolute;
+    top: 750px;
+    left: 600px;
+}
+
+/* Moves 'smoke' above 'bbq' */ 
+div.smoke {
+    position: absolute;
+    top: 540px;
+    left: 622px;
+}
+
+div.flag_low {
+    position: absolute;
+    scale: 0.85;
+    bottom: -50px;
+    right: -200px;
+}
+
+div.crowd_standing {
+    position:absolute;
+    scale: 0.65;
+    bottom: -195px;
+    left: 750px;
+}
