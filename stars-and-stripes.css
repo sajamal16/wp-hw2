@@ -85,3 +85,9 @@ body {
   background-color: #555;
   transition: background-color 0.3s ease;
 }
+body {
+    background-image: url("assets/images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
