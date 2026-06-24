@@ -1,3 +1,90 @@
+/* 4th of July Color Palette & Variables */
+:root {
+  --patriot-blue: #002868;
+  --liberty-red: #BF0A30;
+  --star-gold: #FFD700;
+  --cannon-smoke: #1a1a2e;
+  --parchment: #f5f0e8;
+  
+  /* Spacing Variables */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 2rem;
+}
+
+/* Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition: none !important;
+  }
+}
+
+/* CSS-only page navigation with :target */
+.page {
+  display: none;
+}
+
+.page:target {
+  display: block;
+}
+
+/* Fireworks sparkle animation */
+@keyframes sparkle {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.star {
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: None;
+  overflow: hidden;
+}
+
+body {
+    background-image: url("assets/images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*------------------------------------------*/
+
+/* Container styling */
+.nav-list {
+  list-style-type: none;  /* Removes default bullet points */
+  margin: 0;
+  padding: 0;
+  
+  /* The Flexbox magic that horizontalizes the bar */
+  display: flex;          
+  justify-content: center; /* Centers items. Use 'flex-start' for left, 'flex-end' for right */
+  gap: 20px;              /* Sets spacing between items without messy margins */
+}
+
+/* Individual link styling */
+.nav-list a {
+  display: block;         /* Makes the entire area clickable, not just the text */
+  color: white;           /* Text color */
+  text-decoration: none;  /* Removes the default underline */
+  padding: 14px 20px;     /* Adds padding inside each link item */
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Change background on hover for a polished feel */
+.nav-list a:hover {
+  background-color: #555;
+  transition: background-color 0.3s ease;
+}
 body {
     background-image: url("assets/images/sunset.jpg");
     background-repeat: no-repeat;
