@@ -63,7 +63,6 @@ body {
   list-style-type: none;  /* Removes default bullet points */
   margin: 0;
   padding: 0;
-  background-color: #333; /* Dark background for the bar */
   
   /* The Flexbox magic that horizontalizes the bar */
   display: flex;          
@@ -78,6 +77,7 @@ body {
   text-decoration: none;  /* Removes the default underline */
   padding: 14px 20px;     /* Adds padding inside each link item */
   text-align: center;
+  font-size: 25px;
 }
 
 /* Change background on hover for a polished feel */
