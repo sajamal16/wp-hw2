@@ -101,13 +101,23 @@ div.smoke {
     left: 622px;
 }
 
+/* Moves flag near bottom right, next to 'crowd_standing' */
 div.flag_low {
     position: absolute;
     scale: 0.85;
     bottom: -50px;
-    right: -200px;
+    right: -100px;
 }
 
+/* Duplicates 'flag_high' near bottom right, next to 'crowd_standing' */
+div.flag_high {
+    position: absolute;
+    scale: 0.65;
+    bottom: -150px;
+    right: -430px;
+}
+
+/* Moves 'crowd_standing' in front of campfire */
 div.crowd_standing {
     position:absolute;
     scale: 0.65;
