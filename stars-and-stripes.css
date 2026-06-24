@@ -124,3 +124,79 @@ div.crowd_standing {
     bottom: -195px;
     left: 750px;
 }
+
+.fireworks img {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+}
+
+.people {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.people img{
+    transition: transform;
+    
+}
+
+.people:hover {
+    transform: scale(1.15);
+}
+
+/* Firework (different from fireworks gif) */
+
+.rockets img{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* Move bottom-to-top */
+@keyframes rockets-fly {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(calc(-100vh - 200px));
+    opacity: 0;
+  }
+}
+
+.rockets {
+  position: absolute;
+  left: 50%;               /* Change this if you want a different horizontal position */
+  bottom: -200px;          /* Start just below the screen */
+  transform: translateX(-50%);
+  animation: rockets-fly 2.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  will-change: transform;
+}
+
+/* Gradient tail */
+.rockets-tail {
+  width: 130px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 200, 1) 0%,
+    rgba(255, 200, 50, 0.55) 35%,
+    transparent 100%
+  );
+  filter: blur(3px);
+}
