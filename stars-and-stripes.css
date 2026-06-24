@@ -232,3 +232,11 @@ div.crowd_standing {
     right: 50px;
     top: 50px;
 }
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;   /* prevents scrolling */
+    margin: 0;
+    padding: 0;
+}
