@@ -124,6 +124,7 @@ div.crowd_standing {
 .people {
     position: absolute;
     bottom: 0;
+    z-index: 2;
 }
 
 .people img{
@@ -142,6 +143,7 @@ div.crowd_standing {
     height: 100px;
     position: absolute;
     bottom: 0;
+    z-index: 1;
 }
 
 /* Move bottom-to-top */
