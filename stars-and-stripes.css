@@ -49,6 +49,7 @@
   overflow: hidden;
 }
 
+/* Changes background of each page to be 'sunset.jpg'*/
 body {
     background-image: url("assets/images/sunset.jpg");
     background-repeat: no-repeat;
@@ -84,10 +85,4 @@ body {
 .nav-list a:hover {
   background-color: #555;
   transition: background-color 0.3s ease;
-}
-body {
-    background-image: url("assets/images/sunset.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
